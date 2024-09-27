@@ -16,5 +16,21 @@ namespace SaborefrescorSorveteria
         {
             InitializeComponent();
         }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            Form4 tela4 = new Form4();
+            tela4.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void proToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            Form5 tela5 = new Form5();
+            tela5.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

@@ -63,6 +63,136 @@ namespace SaborefrescorSorveteria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _10938483_receita_de_tigela_de_acai_vetor {
+            get {
+                object obj = ResourceManager.GetObject("10938483-receita-de-tigela-de-acai-vetor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20616011_livre_icone_milkshake_desenho_animado_ilustracao_gratis_vetor {
+            get {
+                object obj = ResourceManager.GetObject("20616011-livre-icone-milkshake-desenho-animado-ilustracao-gratis-vetor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap açai {
+            get {
+                object obj = ResourceManager.GetObject("açai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap acai_no_copo {
+            get {
+                object obj = ResourceManager.GetObject("acai-no-copo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casquinha {
+            get {
+                object obj = ResourceManager.GetObject("casquinha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap desenho_de_picole_e_sorvete_para_pintar_38 {
+            get {
+                object obj = ResourceManager.GetObject("desenho-de-picole-e-sorvete-para-pintar-38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap desenho_picole {
+            get {
+                object obj = ResourceManager.GetObject("desenho picole", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logosb {
+            get {
+                object obj = ResourceManager.GetObject("logosb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logosb__1_ {
+            get {
+                object obj = ResourceManager.GetObject("logosb (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap milk {
+            get {
+                object obj = ResourceManager.GetObject("milk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap milk_shake {
+            get {
+                object obj = ResourceManager.GetObject("milk shake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picole {
+            get {
+                object obj = ResourceManager.GetObject("picole", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picoleer {
+            get {
+                object obj = ResourceManager.GetObject("picoleer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sorveteriaa {
             get {
                 object obj = ResourceManager.GetObject("sorveteriaa", resourceCulture);
@@ -76,6 +206,16 @@ namespace SaborefrescorSorveteria.Properties {
         internal static System.Drawing.Bitmap sorveteriaa2 {
             get {
                 object obj = ResourceManager.GetObject("sorveteriaa2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sorveteriaa21 {
+            get {
+                object obj = ResourceManager.GetObject("sorveteriaa21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
