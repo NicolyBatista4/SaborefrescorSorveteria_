@@ -10,16 +10,8 @@ using System.Windows.Forms;
 
 namespace SaborefrescorSorveteria
 {
-    public partial class Form6 : Form
+    public partial class Form7: Form
     {
-        public Form6()
-        {
-            InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

@@ -32,5 +32,45 @@ namespace SaborefrescorSorveteria
             tela5.ShowDialog();
             this.Visible = true;
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            Form10 tela10 = new Form10();
+            tela10.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            Form8 tela8 = new Form8();
+            tela8.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            Form9 tela9 = new Form9();
+            tela9.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            Form13 tela13 = new Form13();
+            tela13.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void sobreAMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            Form14 tela14 = new Form14();
+            tela14.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

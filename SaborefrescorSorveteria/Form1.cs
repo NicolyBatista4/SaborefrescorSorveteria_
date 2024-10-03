@@ -17,7 +17,7 @@ namespace SaborefrescorSorveteria
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Visible = true;
+            this.Visible = false;
             Form3 tela3 = new Form3();
             tela3.ShowDialog();
             this.Visible = true;

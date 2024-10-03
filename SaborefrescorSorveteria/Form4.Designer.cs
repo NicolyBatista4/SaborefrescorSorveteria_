@@ -40,6 +40,11 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             menuStrip1.SuspendLayout();
@@ -102,6 +107,7 @@
             sobreAMarcaToolStripMenuItem.Name = "sobreAMarcaToolStripMenuItem";
             sobreAMarcaToolStripMenuItem.Size = new Size(158, 34);
             sobreAMarcaToolStripMenuItem.Text = "Sobre a marca";
+            sobreAMarcaToolStripMenuItem.Click += sobreAMarcaToolStripMenuItem_Click;
             // 
             // peçaAquiToolStripMenuItem
             // 
@@ -129,16 +135,18 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources._20616011_livre_icone_milkshake_desenho_animado_ilustracao_gratis_vetor;
-            pictureBox5.Location = new Point(234, 210);
+            pictureBox5.Location = new Point(237, 194);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(148, 163);
+            pictureBox5.Size = new Size(148, 143);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox6
             // 
@@ -149,16 +157,68 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.desenho_picole;
-            pictureBox7.Location = new Point(587, 210);
+            pictureBox7.Location = new Point(592, 194);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(148, 163);
+            pictureBox7.Size = new Size(148, 143);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 7;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 38);
+            label1.Name = "label1";
+            label1.Size = new Size(473, 32);
+            label1.TabIndex = 8;
+            label1.Text = "Sabor e Frescor! - o que você deseja hoje?";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(83, 283);
+            label2.Name = "label2";
+            label2.Size = new Size(96, 30);
+            label2.TabIndex = 9;
+            label2.Text = "Sorvetes";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(255, 340);
+            label3.Name = "label3";
+            label3.Size = new Size(104, 25);
+            label3.TabIndex = 10;
+            label3.Text = "Milk shake";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(466, 283);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 25);
+            label4.TabIndex = 11;
+            label4.Text = "Açaí";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(631, 340);
+            label5.Name = "label5";
+            label5.Size = new Size(71, 25);
+            label5.TabIndex = 12;
+            label5.Text = "Picolés";
             // 
             // Form4
             // 
@@ -166,6 +226,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 248, 244);
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
@@ -204,5 +269,10 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
     }
 }

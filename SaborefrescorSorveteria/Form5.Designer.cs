@@ -33,6 +33,9 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             button1 = new Button();
+            label2 = new Label();
+            label3 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -73,12 +76,13 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.picoleer;
-            pictureBox3.Location = new Point(-1, 232);
+            pictureBox3.Location = new Point(-1, 237);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(802, 283);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // button1
             // 
@@ -92,12 +96,50 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.PaleTurquoise;
+            label2.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(678, 51);
+            label2.Name = "label2";
+            label2.Size = new Size(123, 37);
+            label2.TabIndex = 6;
+            label2.Text = "Sorvetes";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(255, 224, 192);
+            label3.Font = new Font("Segoe UI Semibold", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(692, 247);
+            label3.Name = "label3";
+            label3.Size = new Size(109, 40);
+            label3.TabIndex = 7;
+            label3.Text = "Picolés";
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(255, 224, 192);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(24, 470);
+            button2.Name = "button2";
+            button2.Size = new Size(99, 34);
+            button2.TabIndex = 8;
+            button2.Text = "Voltar";
+            button2.UseVisualStyleBackColor = false;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 248, 244);
             ClientSize = new Size(800, 516);
+            Controls.Add(button2);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(pictureBox2);
             Controls.Add(label1);
@@ -120,5 +162,8 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button button1;
+        private Label label2;
+        private Label label3;
+        private Button button2;
     }
 }

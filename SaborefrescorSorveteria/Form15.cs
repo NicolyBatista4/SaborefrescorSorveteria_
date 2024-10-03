@@ -10,29 +10,24 @@ using System.Windows.Forms;
 
 namespace SaborefrescorSorveteria
 {
-    public partial class Form5 : Form
+    public partial class Form15 : Form
     {
-        public Form5()
+        public Form15()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Form6 tela6 = new Form6();
-            tela6.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Form16 tela16 = new Form16();
+            tela16.ShowDialog();
+            this.Visible = true;
         }
     }
 }
