@@ -19,10 +19,38 @@ namespace SaborefrescorSorveteria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Form4 tela4 = new Form4();
-            tela4.ShowDialog();
-            this.Visible = true;
+            string email = txbemail.Text;
+            string senha = mtbsenha.Text;
+
+            if (email == "nicolybatista@gmail.com" && senha == "nicoly26")
+            {
+                MessageBox.Show("Login efetuado com sucesso!");
+
+                this.Visible = false;
+                Form4 tela4 = new Form4();
+                tela4.ShowDialog();
+                this.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Email ou senha incorretos.");
+
+                this.Visible = false;
+                Form2 tela2 = new Form2();
+                tela2.ShowDialog();
+                this.Visible = true;
+            }
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -33,12 +33,12 @@
             label1 = new Label();
             button1 = new Button();
             panel1 = new Panel();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txbsenha2 = new TextBox();
+            txbsenha1 = new TextBox();
+            txbemail = new TextBox();
+            txbcpf = new TextBox();
+            txbSobrenome = new TextBox();
+            txbNome = new TextBox();
             label10 = new Label();
             label7 = new Label();
             label6 = new Label();
@@ -46,17 +46,18 @@
             label4 = new Label();
             label3 = new Label();
             panel2 = new Panel();
-            textBox10 = new TextBox();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
-            comboBox1 = new ComboBox();
+            txbcasa = new TextBox();
+            txbrua = new TextBox();
+            txbbairro = new TextBox();
+            txbcep = new TextBox();
+            cbestado = new ComboBox();
             label13 = new Label();
             label12 = new Label();
             label11 = new Label();
             label9 = new Label();
             label8 = new Label();
             label2 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
@@ -106,12 +107,12 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(textBox6);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txbsenha2);
+            panel1.Controls.Add(txbsenha1);
+            panel1.Controls.Add(txbemail);
+            panel1.Controls.Add(txbcpf);
+            panel1.Controls.Add(txbSobrenome);
+            panel1.Controls.Add(txbNome);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
@@ -123,48 +124,48 @@
             panel1.Size = new Size(307, 236);
             panel1.TabIndex = 4;
             // 
-            // textBox6
+            // txbsenha2
             // 
-            textBox6.Location = new Point(121, 198);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(167, 23);
-            textBox6.TabIndex = 11;
+            txbsenha2.Location = new Point(121, 198);
+            txbsenha2.Name = "txbsenha2";
+            txbsenha2.Size = new Size(167, 23);
+            txbsenha2.TabIndex = 11;
             // 
-            // textBox5
+            // txbsenha1
             // 
-            textBox5.Location = new Point(67, 163);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(221, 23);
-            textBox5.TabIndex = 10;
+            txbsenha1.Location = new Point(67, 163);
+            txbsenha1.Name = "txbsenha1";
+            txbsenha1.Size = new Size(221, 23);
+            txbsenha1.TabIndex = 10;
             // 
-            // textBox4
+            // txbemail
             // 
-            textBox4.Location = new Point(67, 118);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(221, 23);
-            textBox4.TabIndex = 9;
+            txbemail.Location = new Point(67, 118);
+            txbemail.Name = "txbemail";
+            txbemail.Size = new Size(221, 23);
+            txbemail.TabIndex = 9;
             // 
-            // textBox3
+            // txbcpf
             // 
-            textBox3.Location = new Point(54, 78);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(234, 23);
-            textBox3.TabIndex = 8;
-            textBox3.TextChanged += textBox3_TextChanged;
+            txbcpf.Location = new Point(54, 78);
+            txbcpf.Name = "txbcpf";
+            txbcpf.Size = new Size(234, 23);
+            txbcpf.TabIndex = 8;
+            txbcpf.TextChanged += textBox3_TextChanged;
             // 
-            // textBox2
+            // txbSobrenome
             // 
-            textBox2.Location = new Point(94, 41);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(194, 23);
-            textBox2.TabIndex = 7;
+            txbSobrenome.Location = new Point(94, 41);
+            txbSobrenome.Name = "txbSobrenome";
+            txbSobrenome.Size = new Size(194, 23);
+            txbSobrenome.TabIndex = 7;
             // 
-            // textBox1
+            // txbNome
             // 
-            textBox1.Location = new Point(65, 10);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(223, 23);
-            textBox1.TabIndex = 6;
+            txbNome.Location = new Point(65, 10);
+            txbNome.Name = "txbNome";
+            txbNome.Size = new Size(223, 23);
+            txbNome.TabIndex = 6;
             // 
             // label10
             // 
@@ -222,11 +223,11 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(textBox10);
-            panel2.Controls.Add(textBox9);
-            panel2.Controls.Add(textBox8);
-            panel2.Controls.Add(textBox7);
-            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(txbcasa);
+            panel2.Controls.Add(txbrua);
+            panel2.Controls.Add(txbbairro);
+            panel2.Controls.Add(txbcep);
+            panel2.Controls.Add(cbestado);
             panel2.Controls.Add(label13);
             panel2.Controls.Add(label12);
             panel2.Controls.Add(label11);
@@ -237,42 +238,42 @@
             panel2.Size = new Size(322, 236);
             panel2.TabIndex = 5;
             // 
-            // textBox10
+            // txbcasa
             // 
-            textBox10.Location = new Point(122, 181);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(180, 23);
-            textBox10.TabIndex = 10;
+            txbcasa.Location = new Point(122, 181);
+            txbcasa.Name = "txbcasa";
+            txbcasa.Size = new Size(180, 23);
+            txbcasa.TabIndex = 10;
             // 
-            // textBox9
+            // txbrua
             // 
-            textBox9.Location = new Point(56, 137);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(246, 23);
-            textBox9.TabIndex = 9;
+            txbrua.Location = new Point(56, 137);
+            txbrua.Name = "txbrua";
+            txbrua.Size = new Size(246, 23);
+            txbrua.TabIndex = 9;
             // 
-            // textBox8
+            // txbbairro
             // 
-            textBox8.Location = new Point(67, 99);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(235, 23);
-            textBox8.TabIndex = 8;
+            txbbairro.Location = new Point(67, 99);
+            txbbairro.Name = "txbbairro";
+            txbbairro.Size = new Size(235, 23);
+            txbbairro.TabIndex = 8;
             // 
-            // textBox7
+            // txbcep
             // 
-            textBox7.Location = new Point(57, 21);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(245, 23);
-            textBox7.TabIndex = 7;
+            txbcep.Location = new Point(57, 21);
+            txbcep.Name = "txbcep";
+            txbcep.Size = new Size(245, 23);
+            txbcep.TabIndex = 7;
             // 
-            // comboBox1
+            // cbestado
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Acre (AC)", "Alagoas (AL)", "Amapá (AP)", "Amazonas (AM)", "Bahia (BA)", "Ceará (CE)", "Distrito Federal (DF)", "Espírito Santo (ES)", "Goiás (GO)", "Maranhão (MA)", "Mato Grosso (MT)", "Mato Grosso do Sul (MS)", "Minas Gerais (MG)", "Pará (PA)", "Paraíba (PB)", "Paraná (PR)", "Pernambuco (PE)", "Piauí (PI)", "Rio de Janeiro (RJ)", "Rio Grande do Norte (RN)", "Rio Grande do Sul (RS)", "Rondônia (RO)", "Roraima (RR)", "Santa Catarina (SC)", "São Paulo (SP)", "Sergipe (SE)", "Tocantins (TO)" });
-            comboBox1.Location = new Point(71, 60);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(231, 23);
-            comboBox1.TabIndex = 6;
+            cbestado.FormattingEnabled = true;
+            cbestado.Items.AddRange(new object[] { "Acre (AC)", "Alagoas (AL)", "Amapá (AP)", "Amazonas (AM)", "Bahia (BA)", "Ceará (CE)", "Distrito Federal (DF)", "Espírito Santo (ES)", "Goiás (GO)", "Maranhão (MA)", "Mato Grosso (MT)", "Mato Grosso do Sul (MS)", "Minas Gerais (MG)", "Pará (PA)", "Paraíba (PB)", "Paraná (PR)", "Pernambuco (PE)", "Piauí (PI)", "Rio de Janeiro (RJ)", "Rio Grande do Norte (RN)", "Rio Grande do Sul (RS)", "Rondônia (RO)", "Roraima (RR)", "Santa Catarina (SC)", "São Paulo (SP)", "Sergipe (SE)", "Tocantins (TO)" });
+            cbestado.Location = new Point(71, 60);
+            cbestado.Name = "cbestado";
+            cbestado.Size = new Size(231, 23);
+            cbestado.TabIndex = 6;
             // 
             // label13
             // 
@@ -329,12 +330,23 @@
             label2.TabIndex = 0;
             label2.Text = "Sabor e frescor";
             // 
+            // button2
+            // 
+            button2.Location = new Point(519, 397);
+            button2.Name = "button2";
+            button2.Size = new Size(103, 41);
+            button2.TabIndex = 6;
+            button2.Text = "Mostrar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 248, 244);
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -374,16 +386,17 @@
         private Label label11;
         private Label label9;
         private Label label8;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
+        private TextBox txbsenha2;
+        private TextBox txbsenha1;
+        private TextBox txbemail;
+        private TextBox txbcpf;
+        private TextBox txbSobrenome;
+        private TextBox txbNome;
+        private ComboBox cbestado;
+        private TextBox txbcasa;
+        private TextBox txbrua;
+        private TextBox txbbairro;
+        private TextBox txbcep;
+        private Button button2;
     }
 }
