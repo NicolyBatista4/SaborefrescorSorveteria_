@@ -21,15 +21,15 @@ namespace SaborefrescorSorveteria
         public void Insert(Clientes clientes)
         {
             Command.Connection = Connect.ReturnConnection();
-            Command.CommandText = @"INSERT INTO clientes VALUES
-(NomeCompleto, @CPF, @Email, @Senha, @CEP, @Estado, @Bairro, @Rua, @Ncasa )";
+            Command.CommandText = @"INSERT INTO Clientes VALUES
+(@NomeCompleto, @CPF, @Email, @Senha, @CEP, @Estado, @Bairro, @Rua, @Ncasa )";
 
             Command.Parameters.AddWithValue("@NomeCompleto", clientes.NomeCompleto);
             Command.Parameters.AddWithValue("@CPF", clientes.CPF);
             Command.Parameters.AddWithValue("@Email", clientes.Email);
             Command.Parameters.AddWithValue("@Senha", clientes.Senha);
-            Command.Parameters.AddWithValue("@CEP", clientes.Estado);
-            Command.Parameters.AddWithValue("@Estado", clientes.CEP);
+            Command.Parameters.AddWithValue("@CEP", clientes.CEP);
+            Command.Parameters.AddWithValue("@Estado", clientes.Estado);
             Command.Parameters.AddWithValue("@Bairro", clientes.Bairro);
             Command.Parameters.AddWithValue("@Rua", clientes.Rua);
             Command.Parameters.AddWithValue("@Ncasa", clientes.Ncasa);
