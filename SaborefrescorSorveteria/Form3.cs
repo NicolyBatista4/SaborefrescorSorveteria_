@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace SaborefrescorSorveteria
@@ -24,7 +26,22 @@ namespace SaborefrescorSorveteria
 
             if (senha1 == senha2)
             {
-                MessageBox.Show(txbNome.Text + "Sua conta foi criada com sucesso!");
+                string nome = txbNome.Text;
+                string sobrenome = txbSobrenome.Text;
+                string cpf = txbcpf.Text;
+                string email = txbemail.Text;
+                string senha = txbsenha1.Text;
+                string confirmar = txbsenha2.Text;
+                int cep =int.Parse( txbcep.Text);
+                string estado = cbestado.Text;
+                string bairro = txbbairro.Text;
+                string rua = txbrua.Text;  
+                int casa = int.Parse(txbcasa.Text);
+                Clientes c1 = new Clientes(nome,cpf, email, senha, estado, cep, bairro, rua, casa);
+                ClientesDAO clientesDAO = new ClientesDAO();
+                clientesDAO.Insert(c1);
+
+                MessageBox.Show(txbNome.Text + " Sua conta foi criada com sucesso!");
 
                 this.Visible = false;
                 Form4 tela4 = new Form4();
@@ -33,9 +50,9 @@ namespace SaborefrescorSorveteria
             }
             else
             {
-                MessageBox.Show("Erro : As senhas não se coicidem!");
+                MessageBox.Show(" Erro : As senhas não se coicidem!");
 
-                
+
             }
 
         }
@@ -57,7 +74,12 @@ namespace SaborefrescorSorveteria
                  "\n" + txbbairro.Text +
                  "\n" + txbrua.Text +
                  "\n" + txbcasa.Text);
-                
+
+        }
+
+        private void txbNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

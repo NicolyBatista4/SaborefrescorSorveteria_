@@ -166,6 +166,7 @@
             txbNome.Name = "txbNome";
             txbNome.Size = new Size(223, 23);
             txbNome.TabIndex = 6;
+            txbNome.TextChanged += txbNome_TextChanged;
             // 
             // label10
             // 
