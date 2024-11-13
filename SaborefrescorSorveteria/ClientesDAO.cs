@@ -46,9 +46,49 @@ namespace SaborefrescorSorveteria
             finally
             {
                 Connect.CloseConnection();
+
+            }
+
+        }
+        public void Update(Clientes clientes)
+        {
+            Command.Connection = Connect.ReturnConnection();
+            Command.CommandText = @"UPDATE Clientes SET
+          NomeCompleto = @NomeCompleto,
+          CPF = @CPF, 
+          Email = @Email, 
+          Senha = @Senha,
+          Estado = @Estado, 
+          CEP = @CEP,
+          Bairro = @Bairro,
+          Rua = @Rua, 
+          Ncasa = @Ncasa
+          WHERE Codcliente = @Codcliente";
+
+            Command.Parameters.AddWithValue("@NomeCompleto", clientes.NomeCompleto);
+            Command.Parameters.AddWithValue("@CPF", clientes.CPF);
+            Command.Parameters.AddWithValue("@Email", clientes.Email);
+            Command.Parameters.AddWithValue("@Senha", clientes.Senha);
+            Command.Parameters.AddWithValue("@Estado", clientes.Estado);
+            Command.Parameters.AddWithValue("@CEP", clientes.CEP);
+            Command.Parameters.AddWithValue("@Bairro", clientes.Bairro);
+            Command.Parameters.AddWithValue("@Rua", clientes.Rua);
+            Command.Parameters.AddWithValue("@Ncasa", clientes.Ncasa);
+            try
+            {
+                Command.ExecuteNonQuery();
+            }
+            catch (Exception err)
+            {
+                throw new Exception("Erro: Problemas ao realizar atualização de usuário no banco.\n" + err.Message);
+            }
+            finally
+            {
+                Connect.CloseConnection();
             }
         }
-            public void Excluir(int Codcliente)
+
+        public void Excluir(int Codcliente)
             {
                 Command.Connection = Connect.ReturnConnection();
                 Command.CommandText = @"DELETE FROM Clientes WHERE Codcliente = @Codcliente";
