@@ -106,6 +106,7 @@
             txbemail.Name = "txbemail";
             txbemail.Size = new Size(242, 23);
             txbemail.TabIndex = 6;
+            txbemail.Text = "  ";
             // 
             // mtbsenha
             // 
