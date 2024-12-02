@@ -83,9 +83,10 @@
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(283, 219);
             label3.Name = "label3";
-            label3.Size = new Size(212, 21);
+            label3.Size = new Size(216, 21);
             label3.TabIndex = 4;
-            label3.Text = "Embreve sairá para entrega.";
+            label3.Text = "Em breve sairá para entrega.";
+            label3.Click += label3_Click;
             // 
             // Form18
             // 

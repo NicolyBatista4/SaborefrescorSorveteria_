@@ -44,8 +44,8 @@ namespace SaborefrescorSorveteria
                 MessageBox.Show(txbNome.Text + " Sua conta foi criada com sucesso!");
 
                 this.Visible = false;
-                Form4 tela4 = new Form4();
-                tela4.ShowDialog();
+                Form20 tela20 = new Form20();
+                tela20.ShowDialog();
                 this.Visible = true;
             }
             else
